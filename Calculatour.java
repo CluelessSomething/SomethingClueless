@@ -2,6 +2,22 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Calculatour {
+    public static double add(double x, double y) {
+        return x + y;
+    }
+
+    public static double subtract(double x, double y) {
+        return x - y;
+    }
+
+    public static double multiply(double x, double y) {
+        return x * y;
+    }
+
+    public static double divide(double x, double y) {
+        return x / y;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int timesRannn = 0;
@@ -17,17 +33,17 @@ public class Calculatour {
             System.out.println("Enter your operator");
             String operator = scanner.next();
             if (operator.equals("+")) {
-                System.out.println("Your answer is " + (a + b));
-                results[timesRannn] = (a + b);
+                System.out.println("Your answer is " + add(a, b));
+                results[timesRannn] = add(a, b);
             } else if (operator.equals("-")) {
-                System.out.println("Your answer is " + (a - b));
-                results[timesRannn] = (a - b);
+                System.out.println("Your answer is " + subtract(a, b));
+                results[timesRannn] = subtract(a, b);
             } else if (operator.equals("*")) {
-                System.out.println("Your answer is " + (a * b));
-                results[timesRannn] = (a * b);
+                System.out.println("Your answer is " + multiply(a, b));
+                results[timesRannn] = multiply(a, b);
             } else if (operator.equals("/")) {
-                System.out.println("Your answer is " + (a / b));
-                results[timesRannn] = (a / b);
+                System.out.println("Your answer is " + divide(a, b));
+                results[timesRannn] = divide(a, b);
             } else if (operator.equals("^")) {
                 System.out.println("Your answer is " + Math.pow(a, b));
                 results[timesRannn] = Math.pow(a, b);
