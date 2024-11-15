@@ -5,7 +5,7 @@ public class Boat extends Vehicle {
     }
 
     public void drift(double miles) {
-        milesTraveled += miles;
+        milesTravel += miles;
     }
 
 
