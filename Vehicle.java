@@ -19,7 +19,6 @@ public class Vehicle {
         this.color = color;
         this.fuelRemaining = 100.0;
         this.fuelEconomy = fuelEconomy;
-        this.numPassangers = 0;
         this.passengerCapacity = passengerCapacity;
         this.milesTravel = 0;
     }
